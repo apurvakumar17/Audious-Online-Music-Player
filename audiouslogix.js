@@ -75,7 +75,7 @@ const playMusic = (track) => {
 async function main() {
 
     // Authorization token that must have been created previously. See : https://developer.spotify.com/documentation/web-api/concepts/authorization
-    const token = 'BQATBqu0ZCddx7nkFxVtE6QLBCHORZKqSRe5L8Qz8_m3eTQjhU0D5u1g7N-vDDsSjy1eBZiQj1q99WNGXkmHAsW6bjjFOyvwv4dKFIiCTgGF_XUzOX5exD3sp8QKtp61dL9e-42uQoHgVB3f-4ohStiTvlJ6a-7yidihTOLTH6yQYg60vffX-obakDSVZBpWjIF2GSbZRhey9Wo0bPHGjb2tN-HZ1O_W_RhAXaefocyI3ECPH-64Q5O56vHy9sPdr_pf6hpjL3ae8A0BTG-JO4-pOq06cMVX';
+    const token = 'replace with you spotify api key here';
     async function fetchWebApi(endpoint, method, body) {
         const res = await fetch(`https://api.spotify.com/${endpoint}`, {
             headers: {
