@@ -75,7 +75,7 @@ const playMusic = (track) => {
 async function main() {
 
     // Authorization token that must have been created previously. See : https://developer.spotify.com/documentation/web-api/concepts/authorization
-    const token = 'replace with you spotify api key here';
+    /* const token = 'replace with you spotify api key here';
     async function fetchWebApi(endpoint, method, body) {
         const res = await fetch(`https://api.spotify.com/${endpoint}`, {
             headers: {
@@ -102,9 +102,9 @@ async function main() {
         trackList.push(trackInfo); // Append each formatted string to the array
     });
 
-    console.log(trackList); // Print the array with all track details
+    console.log(trackList); // Print the array with all track details*/
 
-    // trackList=["Dildaara (Stand By Me) by Shafqat Amanat Ali","Soni De Nakhre by Wajid, Labh Janjua, Sneha Pant","Paniyon Sa by Rochak Kohli, Atif Aslam, Tulsi Kumar","Kashmir Main Tu Kanyakumari by Sunidhi Chauhan, Arijit Singh, Neeti Mohan","A Cold Night to Remember by TheRelaxedMovement","Jhoome Jo Pathaan by Vishal-Shekhar, Arijit Singh, Sukriti Kakar, Vishal Dadlani, Shekhar Ravjiani, Kumaar","Main Tera Rasta Dekhunga by प्रीतम, Vishal Mishra, Shreya Ghoshal, Shadab Faridi, Altamash Faridi, Amitabh Bhattacharya","Tareefan by QARAN, Badshah","Copines by Aya Nakamura"," by ","Raftaarein by Vishal Dadlani, Shekhar Ravjiani","Genda Phool by Rekha Bhardwaj","Main Tera Rasta Dekhunga (Film Version) by प्रीतम, Shadab Faridi, Altamash Faridi, Amitabh Bhattacharya"," by ","Chashni Lofi Mix by Abhijeet Srivastava, Vishal-Shekhar, DJ Rink","Khuda Jaane by Vishal-Shekhar, KK, Shilpa Rao, Anvita Dutt Guptan"," by ","O Maahi (From \"Dunki\") by प्रीतम, Arijit Singh, Irshad Kamil","Titli by Chinmayi, Gopi Sundar","Bye Bye Bye - From Deadpool and Wolverine Soundtrack by *NSYNC"];
+    trackList=["Dildaara (Stand By Me) by Shafqat Amanat Ali","Soni De Nakhre by Wajid, Labh Janjua, Sneha Pant","Paniyon Sa by Rochak Kohli, Atif Aslam, Tulsi Kumar","Kashmir Main Tu Kanyakumari by Sunidhi Chauhan, Arijit Singh, Neeti Mohan","A Cold Night to Remember by TheRelaxedMovement","Jhoome Jo Pathaan by Vishal-Shekhar, Arijit Singh, Sukriti Kakar, Vishal Dadlani, Shekhar Ravjiani, Kumaar","Main Tera Rasta Dekhunga by प्रीतम, Vishal Mishra, Shreya Ghoshal, Shadab Faridi, Altamash Faridi, Amitabh Bhattacharya","Tareefan by QARAN, Badshah","Copines by Aya Nakamura"," by ","Raftaarein by Vishal Dadlani, Shekhar Ravjiani","Genda Phool by Rekha Bhardwaj","Main Tera Rasta Dekhunga (Film Version) by प्रीतम, Shadab Faridi, Altamash Faridi, Amitabh Bhattacharya"," by ","Chashni Lofi Mix by Abhijeet Srivastava, Vishal-Shekhar, DJ Rink","Khuda Jaane by Vishal-Shekhar, KK, Shilpa Rao, Anvita Dutt Guptan"," by ","O Maahi (From \"Dunki\") by प्रीतम, Arijit Singh, Irshad Kamil","Titli by Chinmayi, Gopi Sundar","Bye Bye Bye - From Deadpool and Wolverine Soundtrack by *NSYNC"];
     //i have to do that no other way because spotify token is getting expired repeatedly after each hour
 
     trackList.forEach(track => {
